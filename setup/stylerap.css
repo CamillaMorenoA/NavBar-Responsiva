@@ -1,0 +1,100 @@
+/* Fundo com textura urbana/distorcida */
+body {
+  background: #121212 url("https://i.imgur.com/5yP7SXE.jpg") no-repeat center/cover fixed;
+  font-family: 'Metal Mania', cursive;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  background-blend-mode: overlay;
+}
+
+/* Título com efeito glitch/distorção leve */
+h1 {
+  font-size: 4em;
+  text-align: center;
+  color: #f0f0f0;
+  text-shadow:
+    2px 0 0 #ff0000,
+    -2px 0 0 #00ffea,
+    2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  animation: glitch 3s infinite;
+}
+
+/* Animação glitch sutil */
+@keyframes glitch {
+  0%, 100% { text-shadow: 2px 0 0 #ff0000, -2px 0 0 #00ffea, 2px 2px 5px rgba(0, 0, 0, 0.7); }
+  33% { text-shadow: -2px 0 0 #ff0000, 2px 0 0 #00ffea, -2px -2px 5px rgba(0, 0, 0, 0.7); }
+  66% { text-shadow: 0 2px 0 #ff0000, 0 -2px 0 #00ffea, 2px -2px 5px rgba(0, 0, 0, 0.7); }
+}
+
+/* Subtítulo com tom mais sóbrio */
+h2 {
+  font-size: 2em;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Texto e listas com estilo urbano */
+p, li {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Ícone de lista estilo stencil urbano */
+ul {
+  list-style-image: url("https://i.imgur.com/6vH6x8B.png");
+  padding-left: 25px;
+}
+
+/* Links com cor neutra e hover distorcido */
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #00ffea;
+  animation: underline-glitch 0.5s infinite;
+}
+
+@keyframes underline-glitch {
+  0%, 100% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(5px); opacity: 0.5; }
+}
+
+/* Imagens com moldura escura e brilho frio */
+img {
+  border: 3px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,234,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 30px #00ffea, 0 0 20px black;
+}
+
+/* Container de conteúdo em estilo rave urbano */
+#content {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ffea;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 0 25px #00ffea;
+}
