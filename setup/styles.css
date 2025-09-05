@@ -249,3 +249,11 @@ nav {
     color: var(--clr-primary-3);
   }
 }
+
+.titulo{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(42, 22, 151);
+  font-weight: bold;
+}
