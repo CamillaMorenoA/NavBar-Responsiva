@@ -25,8 +25,6 @@ Abrir o arquivo index.html em seu navegador de preferência.
 
 ## 6. Estrutura do projeto
 
-- Pastas
-- 
 index.html: marcação da página.
 
 style.css: estilos responsivos da navbar.
