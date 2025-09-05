@@ -15,27 +15,60 @@ navToggle.addEventListener("click", function () {
 
 links.addEventListener("click", function (e) {
   if (e.target.tagName === "A") {
-    e.preventDefault(); // impede abrir a página direto
+    e.preventDefault(); 
     const linkText = e.target.textContent.toLowerCase();
 
     if (linkText === "rock") {
       body.innerHTML = `
-        <iframe src="rock.html" width="100%" height="1000px" style="border:1px solid #ccc;"></iframe>
-      `;
+    <iframe src="Rock-Page/rock.html" 
+            width="100%" 
+            style="height: calc(100vh - 70px); border:none; display:block;">
+    </iframe>`;
     }
   }
 });
 
 links.addEventListener("click", function (e) {
   if (e.target.tagName === "A") {
-    e.preventDefault(); // impede abrir a página direto
+    e.preventDefault(); 
     const linkText = e.target.textContent.toLowerCase();
 
     if (linkText === "rap") {
-      body.innerHTML = `
-        <iframe src="rap.html" width="100%" height="1000px" style="border:1px solid #ccc;"></iframe>
-      `;
+       body.innerHTML = `
+    <iframe src="Rap-Page/rap.html" 
+            width="100%" 
+            style="height: calc(100vh - 70px); border:none; display:block;">
+    </iframe>`;
     }
   }
 });
 
+links.addEventListener("click", function (e) {
+  if (e.target.tagName === "A") {
+    e.preventDefault();
+    const linkText = e.target.textContent.toLowerCase();
+
+    if (linkText === "pop") {
+      body.innerHTML = `
+    <iframe src="Pop-Page/index.html" 
+            width="100%" 
+            style="height: calc(100vh - 70px); border:none; display:block;">
+    </iframe>`;
+    }
+  }
+});
+
+links.addEventListener("click", function (e) {
+  if (e.target.tagName === "A") {
+    e.preventDefault(); 
+    const linkText = e.target.textContent.toLowerCase();
+
+    if (linkText === "mpb") {
+  body.innerHTML = `
+    <iframe src="Mpb-Page/index.html" 
+            width="100%" 
+            style="height: calc(100vh - 70px); border:none; display:block;">
+    </iframe>`;
+}
+  }
+});
